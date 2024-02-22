@@ -1,0 +1,43 @@
+{
+  "name": "gdrive-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.10",
+    "@types/lodash": "^4.14.202",
+    "axios": "^1.6.7",
+    "classnames": "^2.5.1",
+    "ethers": "^6.11.1",
+    "framer-motion": "^11.0.5",
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.331.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "react-select": "^5.8.0",
+    "react-simple-image-viewer": "^1.2.2",
+    "zustand": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

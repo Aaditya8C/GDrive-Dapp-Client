@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(248, 249, 250);
+  background-color: rgb(23, 20, 32);
+  overflow-x: hidden !important ;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+  /* Safari and Chrome */
+}
