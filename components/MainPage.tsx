@@ -9,6 +9,7 @@ import Display from "./Display";
 import AccessList from "./AccessList";
 import { isEmpty } from "lodash";
 
+declare const window: Window & typeof globalThis;
 const MainPage: React.FC = () => {
   const [account, setAccount] = useState<string>("");
   const [contract, setContract] = useState<any>(null);

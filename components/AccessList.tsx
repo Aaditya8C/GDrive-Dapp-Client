@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { isEmpty } from "lodash";
-import React, { useEffect, useState } from "react";
+import React, { Key, useEffect, useState } from "react";
 import ButtonComp from "./ButtonComp";
 import { motion } from "framer-motion";
 import accessListStore from "@/store/accessListStore";
@@ -39,7 +39,7 @@ const AccessList: React.FC<AccessListProps> = ({ contract }) => {
         </p>
         <div className="inset-x-0 border-violet-700 border-dotted border-t-2" />
         {!isEmpty(accessList) &&
-          accessList.map((item, index: Number) => {
+          accessList.map((item, index: Key) => {
             return (
               <div className="break-all flex gap-6 " key={index}>
                 <p>{item}</p>

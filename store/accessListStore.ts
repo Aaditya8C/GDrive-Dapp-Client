@@ -1,6 +1,11 @@
 import { ethers } from "ethers";
 import { create } from "zustand";
-const accessListStore = create((set) => ({
+
+interface AccessListState {
+  accessList: string[]; // Adjust the type as needed
+  fetchAccessList: (contract: ethers.Contract) => Promise<void>;
+}
+const accessListStore = create<AccessListState>((set) => ({
   accessList: [],
   fetchAccessList: async (contract: ethers.Contract) => {
     try {

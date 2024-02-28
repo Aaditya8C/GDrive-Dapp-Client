@@ -7,9 +7,9 @@ import { CgClose } from "react-icons/cg";
 interface PopupContainerProps {
   children: ReactNode;
   setPopup: Function;
-  closeBtn: boolean;
-  position: string;
-  bgClose: boolean;
+  closeBtn?: boolean;
+  position?: string;
+  bgClose?: boolean;
 }
 const PopupContainer: React.FC<PopupContainerProps> = ({
   setPopup = void 0,
@@ -20,7 +20,7 @@ const PopupContainer: React.FC<PopupContainerProps> = ({
 }) => {
   useEffect(() => {
     const handlePopstate = function () {
-      setPopup(false);
+      setPopup?.(false);
     };
     window.addEventListener("popstate", handlePopstate);
     stopOverflow.stop();
@@ -36,7 +36,7 @@ const PopupContainer: React.FC<PopupContainerProps> = ({
       animate={{ scale: 1, opacity: 1 }}
       onClick={() => {
         if (bgClose) {
-          setPopup(false);
+          setPopup?.(false);
           // window.history.back();
         }
       }}
@@ -46,7 +46,7 @@ const PopupContainer: React.FC<PopupContainerProps> = ({
         <div
           className="absolute right-5 top-5 text-4xl text-white cursor-pointer"
           onClick={(e) => {
-            setPopup(false);
+            setPopup?.(false);
             e.stopPropagation();
           }}
         >

@@ -5,7 +5,7 @@ import React, { ReactNode } from "react";
 
 interface Component {
   children: ReactNode;
-  clickEvent?: Function | undefined;
+  clickEvent?: () => void;
   invert?: boolean;
   customClass?: string;
 }

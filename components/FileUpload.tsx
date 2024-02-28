@@ -19,7 +19,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
 }) => {
   const [file, setFile] = useState<File>();
   const [fileName, setFileName] = useState("No image selected");
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (file) {
       try {
@@ -51,7 +51,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
       }
     }
   };
-  const retrieveFile = (e) => {
+  const retrieveFile = (e: any) => {
     const data: File = e.target.files[0];
     const reader = new window.FileReader();
     reader.readAsArrayBuffer(data);

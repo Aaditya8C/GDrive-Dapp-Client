@@ -15,6 +15,7 @@ interface DisplayProps {
   account: string;
   contract: ethers.Contract;
   setIsModalOpen: Function;
+  isModalOpen: boolean;
 }
 const Display: React.FC<DisplayProps> = ({
   account,
@@ -40,7 +41,7 @@ const Display: React.FC<DisplayProps> = ({
         toast.error("You haven't uploaded any images");
         // console.error("No images to display");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
       toast.error(error.reason);
     }
