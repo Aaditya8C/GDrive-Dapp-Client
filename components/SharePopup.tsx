@@ -41,14 +41,14 @@ const SharePopup: React.FC<SharePopupProps> = ({ setPopup, contract }) => {
         />
         <ButtonComp
           clickEvent={grantAccess}
-          customClass="py-2 shadow-gray-400 shadow-md"
+          customClass="py-2 shadow-gray-400 shadow-none"
         >
           <HandCoins className="w-6 h-6" />
           Grant
         </ButtonComp>
         <ButtonComp
           invert
-          customClass="py-2 shadow-gray-400 shadow-md"
+          customClass="py-2 shadow-gray-400 shadow-none"
           clickEvent={() => setPopup(false)}
         >
           Cancel

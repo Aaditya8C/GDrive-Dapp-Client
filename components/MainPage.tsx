@@ -33,7 +33,7 @@ const MainPage: React.FC = () => {
         const address = await signer.getAddress();
         setAccount(address);
         let contractAddress: string =
-          "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+          "0xe2965Fd463ec7821Ae0dd4611D500FC40300656a";
 
         const localContract: ethers.Contract = new ethers.Contract(
           contractAddress,

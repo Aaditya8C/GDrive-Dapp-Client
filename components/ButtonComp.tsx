@@ -19,7 +19,7 @@ const ButtonComp: React.FC<Component> = ({
     <Button
       type="submit"
       className={classNames(
-        "px-6 py-3 text-base rounded-full  shadow-xl shadow-violet-950  text-orange-200 font-semibold hover:bg-buttonHover flex gap-4",
+        "px-6 py-3 text-base rounded-full  shadow-xl  shadow-violet-950  text-orange-200 font-semibold hover:bg-buttonHover flex gap-4",
         invert ? "bg-red-600 hover:bg-red-700" : "bg-button",
         customClass
       )}

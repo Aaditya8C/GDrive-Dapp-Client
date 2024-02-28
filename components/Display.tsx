@@ -41,6 +41,7 @@ const Display: React.FC<DisplayProps> = ({
         // console.error("No images to display");
       }
     } catch (error) {
+      console.error(error);
       toast.error(error.reason);
     }
   };
