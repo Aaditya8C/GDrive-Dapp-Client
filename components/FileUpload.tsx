@@ -39,6 +39,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
         console.log(response);
         const imageHash = `ipfs://${response.data.IpfsHash}`;
         try {
+          console.log("Image", imageHash);
           contract.add(account, imageHash);
         } catch (error) {
           console.log("Errorrrrr", error);

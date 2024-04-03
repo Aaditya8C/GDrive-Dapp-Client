@@ -34,6 +34,7 @@ const Display: React.FC<DisplayProps> = ({
     try {
       userData = await contract.display(userAddress ? userAddress : account);
       if (!isEmpty(userData)) {
+        console.log(userData);
         const result: string = userData.toString();
         const resultArray: string[] = result.split(",");
         setData(resultArray);
